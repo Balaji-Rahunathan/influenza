@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,  minimum-scale=1.0 user-scalable=no" />
+  <title>clean care is safer care</title>
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+
+  <link href="assets/css/style.css" rel="stylesheet" />
+  <style>
+    .apron-text-container p {
+      color: #000;
+      font-weight: bold;
+    }
+
+    .apron-text-container h5 {
+      color: #d93025;
+    }
+
+    canvas {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      z-index: -100;
+    }
+  </style>
+</head>
+
+<body class="">
+  <canvas id="canvas"></canvas>
+  <div class="">
+    <section class="container-block1">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 block1">
+            <img class="drop-img" src="assets/img/Icon_Airbone.svg" />
+            <h3 class="my-3">Airbone and Contact Precautions</h3>
+            <p class="P_text_aling_21 red_d">Donning</p>
+            <p class="P_text_aling_1 red_d">Before Entering Room</p>
+          </div>
+
+          <div
+            class="col-12 m_b_12 bg_centre_cc block1b_cc col-sm-6 col-md-6 col-lg-4 col-xl-4 block1a order-1 order-md-0 order-lg-0 order-xl-0 my-auto">
+            <div class="apron-image-container box2">
+              <img src="assets/img/Assets/Sanitizer.svg" id="drag_d_1" draggable="true" class="apron z_index" />
+            </div>
+
+            <div class="apron-text-container my-3">
+              <h5><b>Step 1 : </b> Perform Hand Hygiene</h5>
+              <p>
+                Drag the sanitiser over to the person to continue.
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-12 col-sm-6 col-md-6 col-lg-8 col-xl-8 align-content-center order-0 order-md-1 order-lg-1 order-xl-1">
+            <div class="rwl_1">
+              <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 block1b">
+                <div class="block1b-image-container">
+                  <img droppable="true" id="drop_d_1" class="drag"
+                    src="assets/img/Airbone_Character/After/Character_Normal-03.svg" />
+
+                  <img id="drag_img_d_1" class="drag_img" style="display: none;"
+                    src="assets/img/Airbone_Character/Before/vishwa-08.svg" />
+                </div>
+              </div>
+
+              <div class="col-12 m_b_123 col-sm-12 col-md-12 col-lg-6 col-xl-6 block1b">
+                <p class="P_text_aling">Step 1/5</p>
+                <ul class="progressbar m_pro">
+                  <li id="active_d_1_m" class="active_2">Sanitizer</li>
+                  <li>Gown</li>
+                  <li>Mask</li>
+                  <li>Face shield</li>
+                  <li>Gloves</li>
+                </ul>
+                <div class="block1b-text-container" style="display: none;">
+                  <div class="icon-container-block1b_1 d-flex_1 block1b_cc ico_none">
+                    <img class="mr-3" src="assets/img/Assets/Tick_Y.svg" />
+                    <h5 class="my-3">Completed</h5>
+                  </div>
+                  <div class="button-container">
+                    <button class="block1b-button mx-1" onclick="plusSlides(1)">
+                      Continue
+                      <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-center mt-md-5 mb-md-5">
+          <div class="col-12 col-md-10" style="padding-left: 10%;">
+            <ul class="progressbar s_pro">
+              <li id="active_d_1" class="active_2">Sanitizer</li>
+              <li>Gown</li>
+              <li>Mask</li>
+              <li>Face shield</li>
+              <li>Gloves</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container-block1">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 block1">
+            <img class="drop-img" src="assets/img/Icon_Airbone.svg" />
+
+            <h3 class="my-3">Airbone and Contact Precautions</h3>
+            <p class="P_text_aling_21 red_d">Donning</p>
+            <p class="P_text_aling_1 red_d">Before Entering Room</p>
+          </div>
+          <div
+            class="col-12 m_b_12 bg_centre_cc block1b_cc col-sm-6 col-md-6 col-lg-4 col-xl-4 block1a order-1 order-md-0 order-lg-0 order-xl-0 my-auto">
+            <div class="apron-image-container box2">
+              <img src="assets/img/Assets/Gown.svg" draggable="true" id="draggable2" class="apron z_index" />
+            </div>
+            <div class="apron-text-container my-3">
+              <h5><b>Step 2:</b> Wear Long Sleeve Gown</h5>
+              <p>
+                Drag the Gown over to the person to continue.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-8 col-xl-8 order-0 order-md-1 order-lg-1 order-xl-1">
+            <div class="rwl_1">
+              <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 block1b">
+                <div class="block1b-image-container">
+                  <img class="block1b-image" id="droppable2" droppable="true"
+                    src="assets/img/Airbone_Character/After/Character_Normal-03.svg" />
+                </div>
+              </div>
+
+              <div class="col-12 m_b_123 col-sm-12 col-md-12 col-lg-6 col-xl-6 block1b">
+                <p class="P_text_aling">Step 2/5</p>
+                <ul class="progressbar m_pro">
+                  <li class="active_1">Sanitizer</li>
+                  <li id="active_d_2_m" class="active_2">Gown</li>
+                  <li>Mask</li>
+                  <li>Face shield</li>
+                  <li>Gloves</li>
+                </ul>
+                <div class="block1b-text-container2" style="display: none;">
+                  <div class="icon-container-block1b_1 d-flex_1 block1b_cc ico_none">
+                    <img class="mr-3" src="assets/img/Assets/Tick_Y.svg" />
+                    <h5 class="my-3">Completed</h5>
+                  </div>
+                  <div class="button-container">
+                    <button class="block1b-button mx-1" onclick="plusSlides(1)">
+                      Continue
+                      <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-center mt-md-5 mb-md-5">
+          <div class="col-12 col-md-10" style="padding-left: 10%;">
+            <ul class="progressbar s_pro">
+              <li class="active_1">Sanitizer</li>
+              <li id="active_d_2" class="active_2">Gown</li>
+              <li>Mask</li>
+              <li>Face shield</li>
+              <li>Gloves</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container-block1">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 block1">
+            <img class="drop-img" src="assets/img/Icon_Airbone.svg" />
+
+            <h3 class="my-3">Airbone and Contact Precautions</h3>
+            <p class="P_text_aling_21 red_d">Donning</p>
+            <p class="P_text_aling_1 red_d">Before Entering Room</p>
+          </div>
+          <div
+            class="col-12 m_b_12 bg_centre_cc block1b_cc col-sm-6 col-md-6 col-lg-4 col-xl-4 block1a order-1 order-md-0 order-lg-0 order-xl-0 my-auto">
+            <div class="apron-image-container box3">
+              <img src="assets/img/Assets/FFP2.svg" id="draggable3" class="apron z_index" />
+            </div>
+            <div class="apron-text-container my-3">
+              <h5><b>Step 3:</b> put on a FFP2/3 Mask and then perform fit-check.</h5>
+              <p>
+
+                Drag the FFP2/3 Mask over to the person to continue.
+
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-8 col-xl-8 order-0 order-md-1 order-lg-1 order-xl-1">
+            <div class="rwl_1">
+              <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 block1b">
+                <div class="block1b-image-container">
+                  <img class="block1b-image" id="droppable3"
+                    src="assets/img/Airbone_Character/Before/Character_Long%20Sleeve-03.svg" />
+                </div>
+              </div>
+
+              <div class="col-12 m_b_123 col-sm-12 col-md-12 col-lg-6 col-xl-6 block1b">
+                <p class="P_text_aling">Step 3/5</p>
+                <ul class="progressbar m_pro">
+                  <li class="active_1">Sanitizer</li>
+                  <li class="active_1">Gown</li>
+                  <li id="active_d_3_m" class="active_2">Mask</li>
+                  <li>Face shield</li>
+                  <li>Gloves</li>
+                </ul>
+                <div class="block1b-text-container3" style="display: none;">
+                  <div class="icon-container-block1b_1 d-flex_1 block1b_cc ico_none">
+                    <img class="mr-3" src="assets/img/Assets/Tick_Y.svg" />
+                    <h5 class="my-3">Completed</h5>
+                  </div>
+                  <div class="button-container">
+                    <button class="block1b-button mx-1" onclick="plusSlides(1)">
+                      Continue
+                      <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-center mt-md-5 mb-md-5">
+          <div class="col-12 col-md-10" style="padding-left: 10%;">
+            <ul class="progressbar s_pro">
+              <li class="active_1">Sanitizer</li>
+              <li class="active_1">Gown</li>
+              <li id="active_d_3" class="active_2">Mask</li>
+              <li>Face shield</li>
+              <li>Gloves</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-block1">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 block1">
+            <img class="drop-img" src="assets/img/Icon_Airbone.svg" />
+
+            <h3 class="my-3">Airbone and Contact Precautions</h3>
+            <p class="P_text_aling_21 red_d">Donning</p>
+            <p class="P_text_aling_1 red_d">Before Entering Room</p>
+          </div>
+          <div
+            class="col-12 m_b_12 bg_centre_cc block1b_cc col-sm-6 col-md-6 col-lg-4 col-xl-4 block1a order-1 order-md-0 order-lg-0 order-xl-0 my-auto">
+            <div class="apron-image-container box3">
+              <img src="assets/img/Assets/Face shield.svg" id="draggable4" class="apron z_index" />
+            </div>
+            <div class="apron-text-container my-3">
+              <h5><b>Step 4:</b> Wear Face shield / goggles</h5>
+              <p>
+                Drag the Face shield / goggles over to the person to continue.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-8 col-xl-8 order-0 order-md-1 order-lg-1 order-xl-1">
+            <div class="rwl_1">
+              <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 block1b">
+                <div class="block1b-image-container">
+                  <img class="block1b-image" id="droppable4"
+                    src="assets/img/Airbone_Character/Before/Character_ffp2-03.svg" />
+                </div>
+              </div>
+
+              <div class="col-12 m_b_123 col-sm-12 col-md-12 col-lg-6 col-xl-6 block1b">
+                <p class="P_text_aling">Step 4/5</p>
+                <ul class="progressbar m_pro">
+                  <li class="active_1">Sanitizer</li>
+                  <li class="active_1">Gown</li>
+                  <li class="active_1">Mask</li>
+                  <li id="active_d_4_m" class="active_2">Face shield</li>
+                  <li>Gloves</li>
+                </ul>
+                <div class="block1b-text-container4" style="display: none;">
+                  <div class="icon-container-block1b_1 d-flex_1 block1b_cc ico_none">
+                    <img class="mr-3" src="assets/img/Assets/Tick_Y.svg" />
+                    <h5 class="my-3">Completed</h5>
+                  </div>
+                  <div class="button-container">
+                    <button class="block1b-button mx-1" onclick="plusSlides(1)">
+                      Continue
+                      <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-center mt-md-5 mb-md-5">
+          <div class="col-12 col-md-10" style="padding-left: 10%;">
+            <ul class="progressbar s_pro">
+              <li class="active_1">Sanitizer</li>
+              <li class="active_1">Gown</li>
+              <li class="active_1">Mask</li>
+              <li id="active_d_4" class="active_2">Face shield</li>
+              <li>Gloves</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-block1">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 block1">
+            <img class="drop-img" src="assets/img/Icon_Airbone.svg" />
+
+            <h3 class="my-3">Airbone and Contact Precautions</h3>
+            <p class="P_text_aling_21 red_d">Donning</p>
+            <p class="P_text_aling_1 red_d">Before Entering Room</p>
+          </div>
+          <div
+            class="col-12 m_b_12 bg_centre_cc block1b_cc col-sm-6 col-md-6 col-lg-4 col-xl-4 block1a order-1 order-md-0 order-lg-0 order-xl-0 my-auto">
+            <div class="apron-image-container box3">
+              <img src="assets/img/Assets/Gloves.svg" id="draggable5" class="apron z_index" />
+            </div>
+            <div class="apron-text-container my-3">
+              <h5><b>Step 5:</b> Put on Gloves</h5>
+              <p>
+                Drag the Gloves over to the person to continue.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-8 col-xl-8 order-0 order-md-1 order-lg-1 order-xl-1">
+            <div class="rwl_1">
+              <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 block1b">
+                <div class="block1b-image-container">
+                  <img class="block1b-image" id="droppable5"
+                    src="assets/img/Airbone_Character/Before/Character_Face%20shield-03.svg" />
+                </div>
+              </div>
+
+              <div class="col-12 m_b_123 col-sm-12 col-md-12 col-lg-6 col-xl-6 block1b">
+                <p class="P_text_aling">Step 5/5</p>
+                <ul class="progressbar m_pro">
+                  <li class="active_1">Sanitizer</li>
+                  <li class="active_1">Gown</li>
+                  <li class="active_1">Mask</li>
+                  <li class="active_1">Face shield</li>
+                  <li id="active_d_5_m" class="active_2">Gloves</li>
+                </ul>
+                <div class="block1b-text-container5" style="display: none;">
+                  <div class="icon-container-block1b_1 d-flex_1 block1b_cc ico_none">
+                    <img class="mr-3" src="assets/img/Assets/Tick_Y.svg" />
+                    <h5 class="my-3">Completed</h5>
+                  </div>
+                  <div class="button-container">
+                    <button class="block1b-button mx-1" onclick="plusSlides(1)">
+                      Continue
+                      <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-center mt-md-5 mb-md-5">
+          <div class="col-12 col-md-10">
+            <ul class="progressbar s_pro" style="padding-left: 10%;">
+              <li class="active_1">Sanitizer</li>
+              <li class="active_1">Gown</li>
+              <li class="active_1">Mask</li>
+              <li class="active_1">Face shield</li>
+              <li id="active_d_5" class="active_2">Gloves</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-block1">
+      <div class="mydivs">
+        <div class="d_d_div">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 block1">
+                <img class="drop-img" src="assets/img/Icon_Airbone.svg" />
+
+                <h3 class="my-3">Airbone and Contact Precautions</h3>
+                <p class="P_text_aling_21">Doffing</p>
+                <p class="P_text_aling_21">In the room / ante-room</p>
+              </div>
+              <div
+                class="col-12 m_b_12 bg_centre_cc block1b_cc col-sm-6 col-md-6 col-lg-4 col-xl-4 block1a order-1 order-md-0 order-lg-0 order-xl-0 my-auto">
+                <div class="apron-image-container box2">
+                  <div id="drop" class="drop" droppable="true"></div>
+                </div>
+
+                <div class="apron-text-container my-3">
+                  <h5><b>Step 1: </b>Dispose of Gloves</h5>
+                  <p>
+                    Drag the Gloves to empty box to continue.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="col-12 col-sm-6 col-md-6 col-lg-8 col-xl-8 align-content-center order-0 order-md-1 order-lg-1 order-xl-1">
+                <div class="rwl_1">
+                  <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 block1b">
+                    <div class="block1b-image-container">
+                      <img id="drag" draggable="true" class="drag z_index"
+                        src="assets/img/Airbone_Character/After/Balaji%20Precautions-03.svg" />
+
+                      <img id="drag_img" class="drag_img" style="display: none;"
+                        src="assets/img/Airbone_Character/After/Character_Face%20shield-03.svg" />
+                    </div>
+                  </div>
+
+                  <div class="col-12 m_b_123 col-sm-12 col-md-12 col-lg-6 col-xl-6 block1b">
+                    <p class="P_text_aling">Step 1/6</p>
+                    <ul class="progressbar m_pro">
+                      <li id="active_r_1_m" class="active_2">Gloves</li>
+                      <li>Gown</li>
+                      <li>Sanitizer</li>
+                      <li>Face shield</li>
+                      <li>FFP2 mask</li>
+                      <li>Sanitizer</li>
+                    </ul>
+
+                    <div class="block1b-text-container3">
+                      <div id="drop_drag_next_con" style="display: none;">
+                        <div class="icon-container-block1b_1 d-flex_1 block1b_cc ico_none">
+                          <img class="mr-3" src="assets/img/Assets/Tick_Y.svg" />
+                          <h5 class="my-3">Completed</h5>
+                        </div>
+                      </div>
+
+                      <div class="button-container">
+                        <button name="next" id="drop_drag_next_nex" class="block1b-button mx-1" style="display: none;">
+                          Continue
+                          <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row d-flex justify-content-center mt-md-5 mb-md-5">
+              <div class="col-12 col-md-10">
+                <ul class="progressbar s_pro">
+                  <li id="active_r_1" class="active_2">Gloves</li>
+                  <li>Gown</li>
+                  <li>Sanitizer</li>
+                  <li>Face shield</li>
+                  <li>FFP2 mask</li>
+                  <li>Sanitizer</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="d_d_div">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 block1">
+                <img class="drop-img" src="assets/img/Icon_Airbone.svg" />
+
+                <h3 class="my-3">Airbone and Contact Precautions</h3>
+                <p class="P_text_aling_21">Doffing</p>
+                <p class="P_text_aling_21">In the room / ante-room</p>
+              </div>
+              <div
+                class="col-12 m_b_12 bg_centre_cc block1b_cc col-sm-6 col-md-6 col-lg-4 col-xl-4 block1a order-1 order-md-0 order-lg-0 order-xl-0 my-auto">
+                <div class="apron-image-container box2">
+                  <div id="drop_1" class="drop" droppable="true"></div>
+                </div>
+
+                <div class="apron-text-container my-3">
+                  <h5><b>Step 2: </b> Dispose of Gown</h5>
+                  <p>
+                    Drag the Gown to empty box to continue.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="col-12 col-sm-6 col-md-6 col-lg-8 col-xl-8 align-content-center order-0 order-md-1 order-lg-1 order-xl-1">
+                <div class="rwl_1">
+                  <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 block1b">
+                    <div class="block1b-image-container">
+                      <img draggable="true" id="drag_1" class="drag z_index"
+                        src="assets/img/Airbone_Character/After/Character_Face%20shield-03.svg" />
+
+                      <img id="drag_img_1" class="drag_img" style="display: none;"
+                        src="assets/img/Airbone_Character/After/Character_F%20M-03.svg" />
+                    </div>
+                  </div>
+
+                  <div class="col-12 m_b_123 col-sm-12 col-md-12 col-lg-6 col-xl-6 block1b">
+                    <p class="P_text_aling">Step 2/6</p>
+                    <ul class="progressbar m_pro">
+                      <li class="active_1">Gloves</li>
+                      <li id="active_r_2_m" class="active_2">Gown</li>
+                      <li>Sanitizer</li>
+                      <li>Face shield</li>
+                      <li>FFP2 mask</li>
+                      <li>Sanitizer</li>
+                    </ul>
+                    <div class="block1b-text-container1">
+                      <div id="drop_drag_next_con_1" style="display: none;">
+                        <div class="icon-container-block1b_1 d-flex_1 block1b_cc ico_none">
+                          <img class="mr-3" src="assets/img/Assets/Tick_Y.svg" />
+                          <h5 class="my-3">Completed</h5>
+                        </div>
+                      </div>
+
+                      <div class="button-container">
+                        <button name="next" id="drop_drag_next_nex_1" class="block1b-button mx-1"
+                          style="display: none;">
+                          Continue
+                          <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row d-flex justify-content-center mt-md-5 mb-md-5">
+              <div class="col-12 col-md-10">
+                <ul class="progressbar s_pro">
+                  <li class="active_1">Gloves</li>
+                  <li id="active_r_2" class="active_2">Gown</li>
+                  <li>Sanitizer</li>
+                  <li>Face shield</li>
+                  <li>FFP2 mask</li>
+                  <li>Sanitizer</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="d_d_div">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 block1">
+                <img class="drop-img" src="assets/img/Icon_Airbone.svg" />
+
+                <h3 class="my-3">Airbone and Contact Precautions</h3>
+                <p class="P_text_aling_21">Doffing</p>
+                <p class="P_text_aling_21">In the room / ante-room</p>
+              </div>
+              <div
+                class="col-12 m_b_12 bg_centre_cc block1b_cc col-sm-6 col-md-6 col-lg-4 col-xl-4 block1a order-1 order-md-0 order-lg-0 order-xl-0 my-auto">
+                <div class="apron-image-container box2">
+                  <img src="assets/img/Assets/Sanitizer.svg" id="drag_d_3" draggable="true" class="apron z_index" />
+                </div>
+
+                <div class="apron-text-container my-3">
+                  <h5><b>Step 3: </b> Perform Hand Hygiene Clean Hands.</h5>
+                  <p>
+                    Drag the sanitiser over to the person to continue .
+                  </p>
+                </div>
+              </div>
+              <div
+                class="col-12 col-sm-6 col-md-6 col-lg-8 col-xl-8 align-content-center order-0 order-md-1 order-lg-1 order-xl-1">
+                <div class="rwl_1">
+                  <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 block1b">
+                    <div class="block1b-image-container">
+                      <img droppable="true" id="drop_d_3" class="drag"
+                        src="assets/img/Airbone_Character/After/Character_F%20M-03.svg" />
+
+                      <img id="drag_img_d_3" class="drag_img" style="display: none;"
+                        src="assets/img/Droplet_Character/After/Hand Hygiene_2-01.svg" />
+                    </div>
+                  </div>
+
+                  <div class="col-12 m_b_123 col-sm-12 col-md-12 col-lg-6 col-xl-6 block1b">
+                    <p class="P_text_aling">Step 3/6</p>
+                    <ul class="progressbar m_pro">
+                      <li class="active_1">Gloves</li>
+                      <li class="active_1">Gown</li>
+                      <li id="active_r_3_m" class="active_2">Sanitizer</li>
+                      <li>Face shield</li>
+                      <li>FFP2 mask</li>
+                      <li>Sanitizer</li>
+                    </ul>
+                    <div class="block1b-text-container1_1">
+                      <div id="drop_drag_next_con_d_3" style="display: none;">
+                        <div class="icon-container-block1b_1 d-flex_1 block1b_cc ico_none">
+                          <img class="mr-3" src="assets/img/Assets/Tick_Y.svg" />
+                          <h5 class="my-3">Completed</h5>
+                        </div>
+                      </div>
+                      <div class="button-container">
+                        <button name="next" id="drop_drag_next_nex_d_3" class="block1b-button mx-1"
+                          style="display: none;">
+                          Continue
+                          <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row d-flex justify-content-center mt-md-5 mb-md-5">
+              <div class="col-12 col-md-10">
+                <ul class="progressbar s_pro">
+                  <li class="active_1">Gloves</li>
+                  <li class="active_1">Gown</li>
+                  <li id="active_r_3" class="active_2">Sanitizer</li>
+                  <li>Face shield</li>
+                  <li>FFP2 mask</li>
+                  <li>Sanitizer</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="d_d_div">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 block1">
+                <img class="drop-img" src="assets/img/Icon_Airbone.svg" />
+
+                <h3 class="my-3">Airbone and Contact Precautions</h3>
+                <p class="P_text_aling_21">Doffing</p>
+
+                <p class="P_text_aling_1">
+                  Outside the room / in the ante-room
+                </p>
+              </div>
+              <div
+                class="col-12 m_b_12 bg_centre_cc block1b_cc col-sm-6 col-md-6 col-lg-4 col-xl-4 block1a order-1 order-md-0 order-lg-0 order-xl-0 my-auto">
+                <div class="apron-image-container box2">
+                  <div id="drop_3" class="drop" droppable="true"></div>
+                </div>
+
+                <div class="apron-text-container my-3">
+                  <h5><b>Step 4: </b> Remove face shield / goggles</h5>
+                  <p>
+                    Drag the Face shield / goggles to empty box to continue.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="col-12 col-sm-6 col-md-6 col-lg-8 col-xl-8 align-content-center order-0 order-md-1 order-lg-1 order-xl-1">
+                <div class="rwl_1">
+                  <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 block1b">
+                    <div class="block1b-image-container">
+                      <img id="drag_3" class="drag z_index"
+                        src="assets/img/Airbone_Character/After/Character_F M-03.svg" />
+
+                      <img id="drag_img_3" class="drag_img" style="display: none;"
+                        src="assets/img/Airbone_Character/After/Balaji Precautions [Recovered]-31.svg" />
+                    </div>
+                  </div>
+
+                  <div class="col-12 m_b_123 col-sm-12 col-md-12 col-lg-6 col-xl-6 block1b">
+                    <p class="P_text_aling">Step 4/6</p>
+                    <ul class="progressbar m_pro">
+                      <li class="active_1">Gloves</li>
+                      <li class="active_1">Gown</li>
+                      <li class="active_1">Sanitizer</li>
+                      <li id="active_r_4_m" class="active_2">Face shield</li>
+                      <li>FFP2 mask</li>
+                      <li>Sanitizer</li>
+                    </ul>
+                    <div class="block1b-text-container1_1">
+                      <div id="drop_drag_next_con_3" style="display: none;">
+                        <div class="icon-container-block1b_1 d-flex_1 block1b_cc ico_none">
+                          <img class="mr-3" src="assets/img/Assets/Tick_Y.svg" />
+                          <h5 class="my-3">Completed</h5>
+                        </div>
+                      </div>
+                      <div class="button-container">
+                        <button name="next" id="drop_drag_next_nex_3" class="block1b-button mx-1"
+                          style="display: none;">
+                          Continue
+                          <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row d-flex justify-content-center mt-md-5 mb-md-5">
+              <div class="col-12 col-md-10">
+                <ul class="progressbar s_pro">
+                  <li class="active_1">Gloves</li>
+                  <li class="active_1">Gown</li>
+                  <li class="active_1">Sanitizer</li>
+                  <li id="active_r_4" class="active_2">Face shield</li>
+                  <li>FFP2 mask</li>
+                  <li>Sanitizer</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="d_d_div">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 block1">
+                <img class="drop-img" src="assets/img/Icon_Airbone.svg" />
+
+                <h3 class="my-3">Airbone and Contact Precautions</h3>
+                <p class="P_text_aling_21">Doffing</p>
+                <p class="P_text_aling_1">
+                  Outside the room / in the ante-room
+                </p>
+              </div>
+              <div
+                class="col-12 m_b_12 bg_centre_cc block1b_cc col-sm-6 col-md-6 col-lg-4 col-xl-4 block1a order-1 order-md-0 order-lg-0 order-xl-0 my-auto">
+                <div class="apron-image-container box2">
+                  <div id="drop_4" class="drop" droppable="true"></div>
+                </div>
+
+                <div class="apron-text-container my-3">
+                  <h5><b>Step 5: </b> Dispose of FFP2 mask</h5>
+                  <p>
+                    Drag the FFP2 mask to empty box to continue.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="col-12 col-sm-6 col-md-6 col-lg-8 col-xl-8 align-content-center order-0 order-md-1 order-lg-1 order-xl-1">
+                <div class="rwl_1">
+                  <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 block1b">
+                    <div class="block1b-image-container">
+                      <img id="drag_4" class="drag z_index"
+                        src="assets/img/Airbone_Character/After/Balaji Precautions [Recovered]-31.svg" />
+
+                      <img id="drag_img_4" class="drag_img" style="display: none;"
+                        src="assets/img/Airbone_Character/After/Character_Normal-03.svg" />
+                    </div>
+                  </div>
+
+                  <div class="col-12 m_b_123 col-sm-12 col-md-12 col-lg-6 col-xl-6 block1b">
+                    <p class="P_text_aling">Step 5/6</p>
+                    <ul class="progressbar m_pro">
+                      <li class="active_1">Gloves</li>
+                      <li class="active_1">Gown</li>
+                      <li class="active_1">Sanitizer</li>
+                      <li class="active_1">Face shield</li>
+                      <li id="active_r_6_m" class="active_2">FFP2 mask</li>
+                      <li>Sanitizer</li>
+                    </ul>
+                    <div class="block1b-text-container1_1">
+                      <div id="drop_drag_next_con_4" style="display: none;">
+                        <div class="icon-container-block1b_1 d-flex_1 block1b_cc ico_none">
+                          <img class="mr-3" src="assets/img/Assets/Tick_Y.svg" />
+                          <h5 class="my-3">Completed</h5>
+                        </div>
+                      </div>
+                      <div class="button-container">
+                        <button name="next" id="drop_drag_next_nex_4" class="block1b-button mx-1"
+                          style="display: none;">
+                          Continue
+                          <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row d-flex justify-content-center mt-md-5 mb-md-5">
+              <div class="col-12 col-md-10">
+                <ul class="progressbar s_pro">
+                  <li class="active_1">Gloves</li>
+                  <li class="active_1">Gown</li>
+                  <li class="active_1">Sanitizer</li>
+                  <li class="active_1">Face shield</li>
+                  <li id="active_r_6" class="active_2">FFP2 mask</li>
+                  <li>Sanitizer</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="d_d_div">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 block1">
+                <img class="drop-img" src="assets/img/Icon_Airbone.svg" />
+
+                <h3 class="my-3">Airbone and Contact Precautions</h3>
+                <p class="P_text_aling_21">Doffing</p>
+                <p class="P_text_aling_1">
+                  Outside the room / in the ante-room
+                </p>
+              </div>
+              <div
+                class="col-12 m_b_12 bg_centre_cc block1b_cc col-sm-6 col-md-6 col-lg-4 col-xl-4 block1a order-1 order-md-0 order-lg-0 order-xl-0 my-auto">
+                <div class="apron-image-container box2">
+                  <img src="assets/img/Assets/Sanitizer.svg" id="drag_d_2" draggable="true" class="apron z_index" />
+                </div>
+
+                <div class="apron-text-container my-3">
+                  <h5><b>Step 6: </b> Perform Hand Hygiene</h5>
+                  <p>
+                    Drag the sanitiser over to the person to continue.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="col-12 col-sm-6 col-md-6 col-lg-8 col-xl-8 align-content-center order-0 order-md-1 order-lg-1 order-xl-1">
+                <div class="rwl_1">
+                  <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 block1b">
+                    <div class="block1b-image-container">
+                      <img droppable="true" id="drop_d_2" class="drag"
+                        src="assets/img/Airbone_Character/After/Character_Normal-03.svg" />
+
+                      <img id="drag_img_d_2" class="drag_img" style="display: none;"
+                        src="assets/img/Airbone_Character/Before/vishwa-08.svg" />
+                    </div>
+                  </div>
+
+                  <div class="col-12 m_b_123 col-sm-12 col-md-12 col-lg-6 col-xl-6 block1b">
+                    <p class="P_text_aling">Step 6/6</p>
+                    <ul class="progressbar m_pro">
+                      <li class="active_1">Gloves</li>
+                      <li class="active_1">Gown</li>
+                      <li class="active_1">Sanitizer</li>
+                      <li class="active_1">Face shield</li>
+                      <li class="active_1">FFP2 mask</li>
+                      <li id="active_r_5_m" class="active_2">Sanitizer</li>
+                    </ul>
+
+                    <div class="block1b-text-container">
+                      <div id="drop_drag_next_con_d_2" style="display: none;">
+                        <div class="icon-container-block1b_1 d-flex_1 block1b_cc ico_none">
+                          <img class="mr-3" src="assets/img/Assets/Tick_Y.svg" />
+                          <h5 class="my-3">Completed</h5>
+                        </div>
+                      </div>
+                      <div class="button-container">
+                        <button name="next" onclick="loop()" id="drop_drag_next_nex_d_2" class="block1b-button mx-1"
+                          style="display: none;">
+                          Continue
+                          <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row d-flex justify-content-center mt-md-5 mb-md-5">
+              <div class="col-12 col-md-10">
+                <ul class="progressbar s_pro">
+                  <li class="active_1">Gloves</li>
+                  <li class="active_1">Gown</li>
+                  <li class="active_1">Sanitizer</li>
+                  <li class="active_1">Face shield</li>
+                  <li class="active_1">FFP2 mask</li>
+                  <li id="active_r_5" class="active_2">Sanitizer</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="d_d_div">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 block1">
+                <img class="drop-img" src="assets/img/Icon_Airbone.svg" />
+
+                <h3 class="my-3">Airbone and Contact Precautions</h3>
+              </div>
+              <div class="col-md-12" style="text-align: center;">
+                <img class="suc_img" src="assets/img/Assets/done.svg" />
+              </div>
+              <div class="col-12 d-flex justify-content-center">
+                <h1 class="suc_head" style="text-align: center;">
+                  Well done <br />
+                  Training Completed !!! <br /><span class="suc_color">
+                    Successfully</span>
+                </h1>
+              </div>
+              <div class="col-12 d-flex justify-content-center mt-3">
+                <a href="https://slide.skillcord.com/feedback" class="suc_btn btn btn-lg">Evaluation and Feedback</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <img src="assets/img/YellowVirus.svg" class="d_g_bg_ico" />
+  <img src="assets/img/YellowVirus.svg" class="d_g_bg_ico_2" />
+  <img src="assets/img/YellowVirus.svg" class="d_g_bg_ico_3" />
+  <img src="assets/img/YellowVirus.svg" class="d_g_bg_ico_4" />
+
+  <script src="assets/js/jquery.min.js"></script>
+
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+    integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+  <script src="assets/js/main2.js"></script>
+</body>
+
+</html>
