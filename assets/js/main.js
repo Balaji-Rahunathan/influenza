@@ -67,21 +67,21 @@ $("#draggable3").draggable({
     target.style.opacity = 0.5;
   },
 });
+// $("#draggable4").draggable({
+//   stop: function (event, ui) {
+//     var target = document.querySelector("#draggable" + slideIndex);
+//     target.style.top = 0;
+//     target.style.left = 0;
+//     target.style.right = 0;
+//     target.style.bottom = 0;
+//     target.style.opacity = 1;
+//   },
+//   drag: function (event, ui) {
+//     var target = document.querySelector("#draggable" + slideIndex);
+//     target.style.opacity = 0.5;
+//   },
+// });
 $("#draggable4").draggable({
-  stop: function (event, ui) {
-    var target = document.querySelector("#draggable" + slideIndex);
-    target.style.top = 0;
-    target.style.left = 0;
-    target.style.right = 0;
-    target.style.bottom = 0;
-    target.style.opacity = 1;
-  },
-  drag: function (event, ui) {
-    var target = document.querySelector("#draggable" + slideIndex);
-    target.style.opacity = 0.5;
-  },
-});
-$("#draggable5").draggable({
   stop: function (event, ui) {
     var target = document.querySelector("#draggable" + slideIndex);
     target.style.top = 0;
@@ -134,24 +134,24 @@ $("#droppable3").droppable({
     $(".block1b-text-container" + slideIndex).css("display", "block");
   },
 });
+// $("#droppable4").droppable({
+//   drop: function (ui, event) {
+//     $(".block1b-image").attr(
+//       "src",
+//       "assets/img/Droplet_Character/Before/maskover.svg"
+//     );
+//     $("#active_d_4").removeClass("active_2").addClass("active_1");
+//     $("#active_d_4_m").removeClass("active_2").addClass("active_1");
+//     $(".box2").css("height", "210px");
+//     $("#draggable" + slideIndex).hide();
+//     $(".block1b-text-container" + slideIndex).css("display", "block");
+//   },
+// });
 $("#droppable4").droppable({
   drop: function (ui, event) {
     $(".block1b-image").attr(
       "src",
-      "assets/img/Droplet_Character/Before/maskover.svg"
-    );
-    $("#active_d_4").removeClass("active_2").addClass("active_1");
-    $("#active_d_4_m").removeClass("active_2").addClass("active_1");
-    $(".box2").css("height", "210px");
-    $("#draggable" + slideIndex).hide();
-    $(".block1b-text-container" + slideIndex).css("display", "block");
-  },
-});
-$("#droppable5").droppable({
-  drop: function (ui, event) {
-    $(".block1b-image").attr(
-      "src",
-      "assets/img/Droplet_Character/After/BalajiPrecautions28.svg"
+      "assets/img/Droplet_Character/After/face-shield-cut/BalajiPrecautions28.svg"
     );
     $("#active_d_5").removeClass("active_2").addClass("active_1");
     $("#active_d_5_m").removeClass("active_2").addClass("active_1");
@@ -195,7 +195,7 @@ $("#drag").draggable({
     target.style.opacity = 1;
     $("#drag_img").attr(
       "src",
-      "assets/img/Droplet_Character/Before/maskover.svg"
+      "assets/img/Droplet_Character/Before/face-shield-cut/maskover.svg"
     );
     document.getElementById("drag_img").style.display = "block";
   },
@@ -256,7 +256,7 @@ $("#drag_1").draggable({
     target.style.opacity = 1;
     $("#drag_img_1").attr(
       "src",
-      "assets/img/Droplet_Character/Before/maskslide.svg"
+      "assets/img/Droplet_Character/After/face-shield-cut/maskslide.svg"
     );
     document.getElementById("drag_img_1").style.display = "block";
   },
