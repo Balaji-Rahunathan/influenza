@@ -13,8 +13,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet" />
-
-  <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
   <style>
     .apron-text-container p {
       color: #000;
@@ -859,7 +858,7 @@
                         </div>
                       </div>
                       <div class="button-container">
-                        <button name="next" onclick="loop()" id="drop_drag_next_nex_d_2" class="block1b-button mx-1"
+                        <button name="next" id="drop_drag_next_nex_d_2" class="block1b-button mx-1"
                           style="display: none;">
                           Continue
                           <i class="fa fa-angle-double-right" aria-hidden="true"></i>
@@ -885,6 +884,118 @@
           </div>
         </div>
 
+        <div class="d_d_div question_container">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 head_container" style="text-align: center;">
+                <div class="head_text">C.	Knowledge check</div>
+              </div>
+            </div>
+          </div>
+            <div class="container_question">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="img_container">
+                    <img src="assets/img/answer.svg"></img>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="col-md-12 question">
+                    <div class="question_text">
+                      <div class="question_numer">
+                        <div class="question_number_icon"></div>
+                      </div>
+                      <div class="question_q">
+                        Choose the most type of face mask that must be used by healthcare workers to prevent exposure to infectious agents spread by droplets?
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6 question_option">
+                        <a id="q1a" class="false" onclick="toggle(event)">
+                          A) Dust mask
+                        </a>
+                        <a id="q1b" class="false" onclick="toggle(event)">
+                            B) Industrial oil mask
+                          </a>
+                      </div>
+                      <div class="col-md-6 question_option">
+                        <a id="q1c" class="false" onclick="toggle(event)">
+                            C) Surgical mask
+                        </a>
+                        <a id="q1d" class="false" onclick="toggle(event)">
+                            D) N95/FFP2/3 mask
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12 question">
+                    <div class="question_text">
+                      <div class="question_numer">
+                        <div class="question_number_icon"></div>
+                      </div>
+                      <div class="question_q">
+                        Choose the correct face mask that must be used by healthcare workers to prevent exposure to infectious agents spread by aerosol particles?
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6 question_option">
+                        <a id="q2a" class="false" onclick="toggle(event)">
+                          A) Dust mask
+                        </a>
+                        <a id="q2b" class="false" onclick="toggle(event)">
+                            B) Industrial oil mask
+                        </a>
+                      </div>
+                      <div class="col-md-6 question_option">
+                        <a id="q2c" class="false" onclick="toggle(event)">
+                            C) Surgical mask
+                        </a>
+                        <a id="q2d" class="false" onclick="toggle(event)">
+                            D) N95/FFP2/3 mask
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12 question">
+                    <div class="question_text">
+                      <div class="question_numer">
+                        <div class="question_number_icon"></div>
+                      </div>
+                      <div class="question_q">
+                        Identify the correct sequence of events while removing personal protective equipment (PPE)?
+                      </div>
+                    </div>
+                    <div class="question_option">
+                      <a id="q3a" class="false" onclick="toggle(event)">
+                        A) Remove gown/apron, gloves, then clean hands, remove eye protection and mask outside the room, clean hands.
+                      </a>
+                      <a id="q3b" class="false" onclick="toggle(event)">
+                          B) Remove gown/apron, then gloves, clean hands, remove eye protection and mask inside the room, clean hands.
+                      </a>
+                      <a id="q3c" class="false" onclick="toggle(event)">
+                          C) Remove gloves, gown/apron, then clean hands, remove eye protection and mask inside the room, clean hands.
+                      </a>
+                      <a id="q3d" class="false" onclick="toggle(event)">
+                          D) Remove gloves, gown/apron, then clean hands, remove eye protection and mask outside the room, clean hands.
+                      </a>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="answer_button_container" style="text-align: center;">
+                        <button name="next" onclick="loop()" disabled="disabled" id="drop_drag_next_nex_4" class="block1b-button mx-1 submit answer_btn"
+                          >
+                          Submit
+                          <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
         <div class="d_d_div">
           <div class="container">
             <div class="row">
@@ -904,12 +1015,11 @@
                 </h1>
               </div>
               <div class="col-12 d-flex justify-content-center mt-3">
-                <a href="https://slide.skillcord.com/feedback" class="suc_btn btn btn-lg">Evaluation and Feedback</a>
+                <a class="suc_btn btn btn-lg" href="index.html">Close</a>
               </div>
             </div>
           </div>
         </div>
-      </div>
     </section>
   </div>
 

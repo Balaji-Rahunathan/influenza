@@ -16,6 +16,84 @@ body {
 a:link {
   text-decoration: none !important;
 }
+.question {
+  padding-top: 10px;
+}
+
+.true{
+  text-align: center;
+  color: white !important;
+  border-radius: 10px;
+  padding:10px 20px;
+  margin: 5px 20px ;
+  font-weight: 500;
+  font-size: 14px;
+  border: 3px solid #3fbcf9;
+  background-color: #3fbcf9;
+  cursor: pointer;
+}
+.false{
+  text-align: center;
+  color: grey;
+  border-radius: 10px;
+  padding:10px 20px;
+  margin: 5px 20px ;
+  font-weight: 500;
+  font-size: 14px;
+  border: 3px solid #3fbcf9;
+  cursor: pointer;
+}
+
+.container_question {
+  width: 90%;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.question_q {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.question_option {
+  display:flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.head_text{
+  font-size: 30px;
+  font-weight: 600;
+  color:  #3fbcf9;
+}
+
+.question_numer {
+  width: 8%;
+  height: 30px;
+  padding: 6px 10px 0 0;
+}
+
+.question_number_icon {
+  background-color: #3fbcf9;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  /* padding-top: 20px; */
+}
+
+.answer_button_container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.answer_btn {
+  width: 40% !important;
+}
+
+.question_text {
+  display:flex;
+}
 
 a:visited {
   text-decoration: none;
@@ -1096,6 +1174,12 @@ span {
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
+}
+
+@media screen and (min-width: 1500px) {
+  .img_container {
+    align-items: center;
+  }
 }
 
 @media screen and (min-width: 600px) and (max-width: 900px) {

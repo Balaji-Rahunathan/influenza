@@ -695,4 +695,74 @@ const confs = new Array(confNum).fill().map((_) => new Confetti());
 
 // loop();
 
+function openQuestions() {
+  $('.d_d_div').css('display', 'none');
+  $('.question_container').css('display', 'block');
+  $('canvas').css('display', 'none');
+}
+
+
+function toggle(event){
+  var str 
+  console.log("event", event.target.id);
+  if(event.target.id.includes("a"))
+  {
+       document.getElementById(event.target.id).className = "true"
+       str = event.target.id;
+       var valueb = str.replace("a","b");
+       var valuec = str.replace("a","c");
+       var valued = str.replace("a","d");
+       document.getElementById(valueb).className = "false" 
+       document.getElementById(valuec).className = "false" 
+       document.getElementById(valued).className = "false" 
+  } else if(event.target.id.includes("b")) {
+      document.getElementById(event.target.id).className = "true" 
+      str = event.target.id;
+      var valueb = str.replace("b","a");
+      var valuec = str.replace("b","c");
+      var valued = str.replace("b","d");
+      document.getElementById(valueb).className = "false" 
+      document.getElementById(valuec).className = "false" 
+      document.getElementById(valued).className = "false" 
+
+  } else if(event.target.id.includes("c")) {
+    document.getElementById(event.target.id).className = "true" 
+    str = event.target.id;
+    var valueb = str.replace("c","a");
+    var valuec = str.replace("c","b");
+    var valued = str.replace("c","d");
+    document.getElementById(valueb).className = "false" 
+    document.getElementById(valuec).className = "false" 
+    document.getElementById(valued).className = "false" 
+  } else {
+    document.getElementById(event.target.id).className = "true" 
+    str = event.target.id;
+    var valueb = str.replace("d","a");
+    var valuec = str.replace("d","b");
+    var valued = str.replace("d","c");
+    document.getElementById(valueb).className = "false" 
+    document.getElementById(valuec).className = "false" 
+    document.getElementById(valued).className = "false"
+  }
+
+  var q1 = document.getElementById("q1c").className
+  var q2 = document.getElementById("q2d").className
+  var q3 = document.getElementById("q3d").className
+
+  if(q1=="true"&&q2=="true"&&q3=="true")
+  {
+      // document.getElementById("answer").innerHTML = "Complete"
+      // answer()
+      // loop();
+      $('.submit').prop('disabled',false);
+  }
+  else{
+    $('.submit').prop('disabled',true);
+      // document.getElementById("answer").innerHTML = "Not Sure Go back and check again"
+  }
+}
+
+function close() {
+  window.location.href = 'index.html';
+}
 console.log(navigator);
