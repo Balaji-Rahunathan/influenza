@@ -888,7 +888,7 @@
           <div class="container">
             <div class="row">
               <div class="col-md-12 head_container" style="text-align: center;">
-                <div class="head_text">C.	Knowledge check</div>
+                <div class="head_text">Knowledge check</div>
               </div>
             </div>
           </div>
@@ -982,8 +982,18 @@
                   </div>
                   <div class="row">
                     <div class="col-md-12">
+                      <div class="answer_error" style="display: none">Oops, wrong answer, please try again</div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
                       <div class="answer_button_container" style="text-align: center;">
-                        <button name="next" onclick="loop()" disabled="disabled" id="drop_drag_next_nex_4" class="block1b-button mx-1 submit answer_btn"
+                        <button onclick="validate()" class="block1b-button mx-1 answer_btn answer_btn_validate"
+                          >
+                          Submit
+                          <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                        </button>
+                        <button name="next" onclick="loop()" style="display: none;" id="drop_drag_next_nex_4" class="block1b-button mx-1 submit answer_btn"
                           >
                           Submit
                           <i class="fa fa-angle-double-right" aria-hidden="true"></i>

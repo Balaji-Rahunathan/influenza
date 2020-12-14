@@ -704,7 +704,6 @@ function openQuestions() {
 
 function toggle(event){
   var str 
-  console.log("event", event.target.id);
   if(event.target.id.includes("a"))
   {
        document.getElementById(event.target.id).className = "true"
@@ -745,20 +744,31 @@ function toggle(event){
     document.getElementById(valued).className = "false"
   }
 
-  var q1 = document.getElementById("q1c").className
-  var q2 = document.getElementById("q2d").className
-  var q3 = document.getElementById("q3d").className
+  var q1 = document.getElementById("q1c").className;
+  var q2 = document.getElementById("q2d").className;
+  var q3 = document.getElementById("q3d").className;
 
   if(q1=="true"&&q2=="true"&&q3=="true")
   {
-      // document.getElementById("answer").innerHTML = "Complete"
-      // answer()
-      // loop();
-      $('.submit').prop('disabled',false);
+      $('.submit').css('display','block');
+      $('.answer_btn_validate').css('display','none');
+      $('.answer_error').css('display', 'none');
   }
   else{
-    $('.submit').prop('disabled',true);
-      // document.getElementById("answer").innerHTML = "Not Sure Go back and check again"
+    $('.submit').css('display','none');
+    $('.answer_btn_validate').css("display", 'block')
+  }
+}
+
+function validate() {
+  var q1 = document.getElementById("q1c").className;
+  var q2 = document.getElementById("q2d").className;
+  var q3 = document.getElementById("q3d").className;
+  q1!=="true"?$(".answer_error").html("Oops, wrong answer, please try again <br> Check Question No: 1"): q2!=="true"?$(".answer_error").html("Oops, wrong answer, please try again <br> Check Question No: 2") : q3!=="true"?$(".answer_error").html("Oops, wrong answer, please try again <br> Check Question No: 3"): null;
+  if(q1=="true" && q2=="true" && q3=="true") {
+    $('.answer_error').css('display', 'none');
+  } else {
+    $('.answer_error').css('display', 'block');
   }
 }
 

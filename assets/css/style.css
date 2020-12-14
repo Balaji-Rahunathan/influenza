@@ -28,7 +28,7 @@ a:link {
   margin: 5px 20px ;
   font-weight: 500;
   font-size: 14px;
-  border: 3px solid #3fbcf9;
+  border: 2px solid #3fbcf9;
   background-color: #3fbcf9;
   cursor: pointer;
 }
@@ -40,7 +40,7 @@ a:link {
   margin: 5px 20px ;
   font-weight: 500;
   font-size: 14px;
-  border: 3px solid #3fbcf9;
+  border: 2px solid #3fbcf9;
   cursor: pointer;
 }
 
@@ -88,11 +88,17 @@ a:link {
 }
 
 .answer_btn {
-  width: 40% !important;
+  width: 30% !important;
 }
 
 .question_text {
   display:flex;
+}
+
+.answer_error {
+  color: #E12349;
+  padding: 10px;
+  text-align: center;
 }
 
 a:visited {
