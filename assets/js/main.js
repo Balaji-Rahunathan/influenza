@@ -356,7 +356,7 @@ $("#drop_2").droppable({
     dropped2 = true;
     var target = document.getElementById("drop_2");
     target.style.opacity = 0.5;
-    document.getElementById("drop_drag_next_nex_d_2").style.display = "block";
+    document.getElementById("drop_drag_next_nex_2").style.display = "block";
     document.getElementById("drop_drag_next_con_2").style.display = "block";
   },
 });
