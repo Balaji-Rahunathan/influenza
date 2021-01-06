@@ -6,6 +6,10 @@ body {
   overscroll-behavior-y: contain;
 }
 
+/* ....... */
+.P_text_aling.P_text_alingg{font-weight: 600;}
+/* ....... */
+
 .logo_img_d {
   width: 20%;
 }
@@ -151,12 +155,12 @@ h6 {
   color: #030369;
 }
 .ban_para {
-  font-size: 20px;
+  font-size: 37px;
   line-height: 1.8;
   text-align: center;
   padding: 1% 10%;
   color: #b73239;
-  font-weight: bold;
+  font-weight: 800;
 }
 .ban_btn {
   margin-bottom: 2%;
@@ -844,6 +848,9 @@ span {
     margin-bottom: 0.3rem !important;
     margin-top: 0.3rem !important;
   }
+
+  
+
   .P_text_aling {
     text-align: center;
     margin-top: 20px;
